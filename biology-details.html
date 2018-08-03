@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+     <style>
+         .breadcrumb, .breadcrumb:before{
+             color: #2196F3 !important;
+         }
+         .row {
+             margin-top: 25px;
+             margin-bottom: 25px;
+         }
+         video {
+             display: block;
+             width: 2000px;
+             margin: 0 auto;
+         }
+         .sidenav {
+            position: absolute !important;
+            width: 100% !important;
+            right: 100% !important;
+            top: 0;
+            margin: 0;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(100%);
+            height: auto !important;
+            padding-bottom: 60px;
+            background-color: #fff;
+            z-index: 999;
+            overflow-y: auto;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+         }
+        @media only screen and (max-width: 992px) {
+            .sidenav.sidenav-fixed {
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+        }
+        .sidenav {
+            height: auto !important;
+        }
+        footer {
+            margin-top: 200px;
+        }
+        }
+        .l2 {
+             height: 100%;
+             width: 100%;
+             background: red;
+             position: relative;
+         }
+         .sidenav li>a {
+            color: rgba(0,0,0,0.87);
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            height: 48px;
+            line-height: 48px;
+            padding: 0 0px !important;
+            margin-left: auto !important;
+            text-align: right !important; 
+        }
+        .sidenav .collapsible-header, .sidenav.fixed .collapsible-header {
+            background-color: transparent;
+            border: none;
+            line-height: inherit;
+            height: inherit;
+            padding: 0 10px !important;
+            text-align: right !important;
+        }
+        .collapsible-header i {
+            margin-left: 5px !important;
+        }
+        .collapsible-header span{
+            margin-left: auto;
+        }
+     </style>
+    <title>Home</title>
+</head>
+<body>
+    
+    <nav class="nav-wraper blue">
+        <div class="container right-align">
+            <a href="#" class="logo-brand">الشعار يكون هنا</a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col l6 s12">
+            <nav class="z-depth-0">
+                <div style="margin-top: 25px;"  class="nav-wrapper white">
+                    <div class="row">
+                        <div  class="col s12">
+                            <a href="index.html" class="breadcrumb"><i class="material-icons">home</i></a>
+                            <a href="biology-details.html" class="breadcrumb">الأحياء</a>
+                            <a href="subjects.html" class="breadcrumb">المواد</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col l10 s12">
+                
+        <video class="responsive-video z-depth-3" controls>
+                <source src="vid/videoplayback.mp4" type="video/mp4">
+            </video>
+            <div class="row">
+                <!-- <div style="margin-top: 25px;" class="col l6 left-align">
+                        <a href="#" class="btn btn-waves waves-effect"><i class="material-icons right">more_horiz</i>روابط اضافية</a>
+                        <a href="#" class="btn btn-waves waves-effect deep-purple"><i class="material-icons right">picture_as_pdf</i>تمارين</a>
+                        <a href="#" class="btn btn-waves waves-effect indigo"><i class="material-icons right">picture_as_pdf</i>محتوى المادة</a>
+                </div> -->
+                <div class="col l12 s12 right-align">
+                    <h4 class="right-align">عنوان الفيديو يكون هنا</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col l2 s12 z-depth-0">
+                    <ul id="nav-mobile" class="sidenav sidenav-fixed">
+                        <ul class="collapsible">
+                            
+                                <li>
+                                        <div class="collapsible-header waves-effect waves-teal">
+                                            <span>روابط اضافية</span><i class="material-icons">more_horiz</i>
+                                        </div>
+                                        <div class="collapsible-body">
+                                                <ul>
+                                                        <li><a href="#">روابط اضافية 1</a></li>
+                                                        <li><a href="#">روابط اضافية 1</a></li>
+                                                        <li><a href="#">روابط اضافية 1</a></li>
+                                                      </ul>
+                                        </div>
+                                      </li>
+                                      <li>
+                                            <div class="collapsible-header waves-effect waves-teal">
+                                                <span>تمارين</span><i class="material-icons">picture_as_pdf</i>
+                                            </div>
+                                            <div class="collapsible-body">
+                                                    <ul>
+                                                            <li><a href="#">تمارين 1</a></li>
+                                                            <li><a href="#">تمارين 1</a></li>
+                                                            <li><a href="#">تمارين 1</a></li>
+                                                          </ul>
+                                            </div>
+                                          </li>
+                                          <li>
+                                                <div class="collapsible-header waves-effect waves-teal">
+                                                    <span>محتوى المادة</span><i class="material-icons">picture_as_pdf</i>
+                                                </div>
+                                                <div class="collapsible-body">
+                                                        <ul>
+                                                                <li><a href="#">محتوى المادة 1</a></li>
+                                                                <li><a href="#">محتوى المادة 1</a></li>
+                                                                <li><a href="#">محتوى المادة 1</a></li>
+                                                              </ul>
+                                                </div>
+                                              </li>
+<!-- <li class="bold right-align collapsible-header"><a class="waves-effect waves-teal right-align"><i style="margin-left: 5px;" class="material-icons right">more_horiz</i>روابط اضافية</a></li>
+<li class="bold"><a href="#" class="waves-effect waves-teal right-align"><i style="margin-left: 5px;" class="material-icons right">picture_as_pdf</i>تمارين</a></li>
+<li class="bold"><a href="#" class="waves-effect waves-teal right-align"><i style="margin-left: 5px;" class="material-icons right">picture_as_pdf</i>محتوى المادة</a></li> -->
+
+                        </ul>
+                          </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="page-footer white">
+        <div class="footer-copyright">
+            <div class="container center-align blue-text text-lighten-1">عنوان الموقع &copy; 2018</div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+        
+
+
+    </script>
+</body>
+</html>
