@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <title>Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100%;
+            width: 100%;
+
+        }
+    .sidebar {
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        height: 150%;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: right !important;
+        /* border-left: 2px solid #2196f3 ; */
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    }
+    .collapsible-header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        line-height: 1.5;
+        padding: 1rem;
+        background-color: transparent; 
+        border-bottom: 0px;
+        margin-left: auto
+    }
+    .collapsible {
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        margin: 0rem;
+        -webkit-box-shadow: none;
+        
+    }
+    
+    .collapsible-header {
+        display: flex; flex-direction: row; justify-content: flex-end;
+        margin: 15px;
+    }
+    .collapsible-body {
+        padding: 0.5rem !important;
+    }
+    .collapsible-header i{
+        color: #2196F3 !important;
+    }
+
+    .waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
+    border: 0;
+    font-style: normal;
+    font-size: inherit;
+    text-transform: inherit;
+    background: none;
+    color: #fff;
+}
+.the-tab {
+    transition: all 0.5s ease;
+}
+video.responsive-video {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+    
+    </style>
+</head>
+<body>
+    
+        <nav>
+                <div class="nav-wrapper blue">
+                        <div class="container right-align">
+                                <a href="admin.html" class="logo-brand">صفحة الأدمن</a>
+                                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+                            </div>
+                  
+                </div>
+              </nav>
+
+
+    <div class="sidebar">
+            
+            <ul class="collapsible" class="right-align">
+                    <li>
+                      <div class="collapsible-header waves-effect waves-blue"><span>الأقسام الرئيسية</span><i class="material-icons" style="margin-left: 5px;">create_new_folder</i></div>
+                      <div class="collapsible-body"><span>
+                            <ul>
+                                    <li><a href="#1" style="display: flex; flex-direction: row; justify-content: flex-end;" class="collapsible-header waves-effect waves-blue tab-link">اضافة صفوف<i style="position: relative; display: inline-block; top:2.5px;" class="material-icons">add</i></a></li>
+                                    <li><a href="#2" style="display: flex; flex-direction: row; justify-content: flex-end;" class="collapsible-header waves-effect waves-blue tab-link">اضافة انشطة اخرى<i style="position: relative; display: inline-block; top:2.5px;" class="material-icons">add</i></a></li>
+
+                                  </ul>
+                      </span></div>
+                    </li>
+                    <li>
+                      <a href="#3" class="collapsible-header waves-effect waves-blue tab-link" style="color: #000;">الأقسام الفرعية<i class="material-icons" style="margin-left: 5px;">note</i></a>
+                      <!-- <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div> -->
+                    </li>
+                    <li>
+                            <a href="#4" class="collapsible-header waves-effect waves-blue tab-link"  style="color: #000;">المحتوى<i class="material-icons" style="margin-left: 5px;">layers</i></a>
+                            <!-- <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div> -->
+                    </li>
+                    <li>
+                            <a href="#5" class="collapsible-header waves-effect waves-blue tab-link"  style="color: #000;">عرض الكل<i class="material-icons" style="margin-left: 5px;">dashboard</i></a>
+                            <!-- <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div> -->
+                    </li>
+                  </ul>
+    </div>
+
+   <div class="wrapper" style="width: 70%; margin: 0 auto; margin-right: 26.5%; text-align: right; ">
+       <div class="the-tab" id="#1">
+            <h2>الأقسام الرئيسية</h2>
+            <h5 style="margin-top: 25px;">اضافة صفوف</h5>
+            <form action="">
+             <div class="row">
+                 <div class="input-field col s2 offset-s6">
+                     <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                 </div>
+                 <div class="input-field col s4">
+                   <input style="text-align: right; direction:rtl;" placeholder="الصف" id="" type="text" class="validate">
+                 </div>
+               </div>
+            </form>
+        </div>
+        <div class="the-tab" id="#2">
+                <h2>الأقسام الرئيسية</h2>
+                <h5 style="margin-top: 25px;">اضافة أنشطة اخرى</h5>
+                <form action="">
+                 <div class="row">
+                     <div class="input-field col s2 offset-s6">
+                         <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                     </div>
+                     <div class="input-field col s4">
+                       <input style="text-align: right; direction:rtl;" placeholder="نشاط" id="" type="text" class="validate">
+                     </div>
+                   </div>
+                </form>
+            </div>
+            <div class="the-tab" id="#3">
+                    <h2>الأقسام الفرعية</h2>
+                    <h5 style="margin-top: 25px; margin-bottom: 25px;">اضافة مادة</h5>
+                    <form action="">
+                     <div class="row">
+                         <a class='dropdown-trigger btn blue' href='#' data-target='dropdown1'>قم باختيار القسم الرئيسي</a>
+                         
+                            <ul id='dropdown1' class='dropdown-content'>
+                                    <li><a href="#!">one</a></li>
+                                    <li><a href="#!">two</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="#!">three</a></li>
+                                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                                </ul>
+                                <br>
+                                <span id="preview_selected"></span>
+
+                         <div class="hidden_tab" style="display: none;">
+                            <div class="input-field col s2 offset-s6" style="margin-top: -18px;">
+                                <input style="top: 45px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                            </div>
+                            <div class="input-field col s4">
+                              <input style="text-align: right; direction:rtl;" placeholder="المادة" id="" type="text" class="validate">
+                            </div>
+                         </div>
+                          
+                         
+                       </div>
+                    </form>
+                </div>
+
+                 <div class="the-tab" id="#4">
+                    <h2>المحتوى</h2>
+                    <h5 style="margin-top: 25px; margin-bottom: 25px;">اضافة محتوى</h5>
+                    <form action="">
+                     <div class="row">
+                         <a class='dropdown-trigger1 btn blue' href='#' data-target='dropdown2'>قم باختيار القسم الفرعي</a>
+                         
+                             <ul id='dropdown2' class='dropdown-content'>
+                                    <li><a href="#!">one</a></li>
+                                    <li><a href="#!">two</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="#!">three</a></li>
+                                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                                </ul>
+                                <br>
+                                <span id="preview_selected2"></span> 
+            
+                                <div class="hidden_tab2" style="display: none;">
+
+                                
+                                <div style="width: 50%;margin-left: auto; margin-top: 25px;" class="file-field input-field">
+                                        <div class="btn blue">
+                                          <span>الفيديو</span>
+                                          <input type="file" multiple>
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                          <input  style="text-align: right; direction:rtl;" class="file-path validate" type="text" placeholder="ارفاق مقطع الفيديو">
+                                        </div>
+                                      </div>
+
+                         <div class="input-field col s2 offset-s6" >
+                             <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                         </div>
+                         <div class="input-field col s4">
+                           <input style="text-align: right; direction:rtl;" placeholder="عنوان المقطع" id="" type="text" class="validate">
+                         </div>
+
+                         <div id="additional_links_container">
+
+                         
+                          <div class="input-field col s2 offset-s6" >
+                                <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                            </div>
+                            
+                            <div class="input-field col s4" >
+                              <input style="text-align: right; direction:rtl;" placeholder="روابط اضافية" id="" type="text" class="validate">
+                              <a class="btn-floating waves-effect waves-light blue adding_btn"><i class="material-icons">add</i></a>
+                            </div>
+                            
+                                
+                            </div>
+                            <div id="additional_exercises_container">
+                                    <div style="width: 50%;margin-left: auto; margin-top: -15px; display: inline-block;" class="file-field input-field">
+                                        <div class="btn blue">
+                                            <span>الملف</span>
+                                            <input type="file" multiple>
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input  style="text-align: right; direction:rtl;" class="file-path validate" type="text" placeholder="ارفاق تمرين">
+                                        </div>
+                                        <a class="btn-floating waves-effect waves-light blue adding_btn2"><i class="material-icons">add</i></a>
+                                    </div>
+                            </div>
+                            
+                            </div>
+                       </div>
+                    </form>
+                </div> 
+
+                <div class="the-tab" id="#5">
+                   <div class="row">
+
+                        <div class="col s12 l4">
+                            <div class="card center-align">
+                                    <a class="btn-floating btn waves-effect waves-light blue modal-trigger" href="#modal2" style="position: absolute; left: 0; margin: 7px;"><i class="material-icons">edit</i></a>
+                                    <a class="btn-floating btn waves-effect waves-light blue modal-trigger" href="#modal3" style="position: absolute; left: 45px; margin: 7px;"><i class="material-icons">close</i></a>
+                                <br>
+                                    <div class="card-content">
+                                    <span class="card-title">القسم الرئيسي </span>
+                                    <span class="card-title">القسم الفرعي </span>
+                                    <p>المحتوى</p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <a href="#modal1" class="btn waves-effect effect-light blue modal-trigger">عرض التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 l4">
+                                <div class="card center-align">
+                                        <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 0; margin: 7px;"><i class="material-icons">edit</i></a>
+                                        <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 45px; margin: 7px;"><i class="material-icons">close</i></a>
+                                    <br>
+                                        <div class="card-content">
+                                        <span class="card-title">القسم الرئيسي </span>
+                                        <span class="card-title">القسم الفرعي </span>
+                                        <p>المحتوى</p>
+                                    </div>
+                                    <div class="card-action center-align">
+                                        <a href="#" class="btn waves-effect effect-light blue">عرض التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s12 l4">
+                                    <div class="card center-align">
+                                            <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 0; margin: 7px;"><i class="material-icons">edit</i></a>
+                                            <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 45px; margin: 7px;"><i class="material-icons">close</i></a>
+                                        <br>
+                                            <div class="card-content">
+                                            <span class="card-title">القسم الرئيسي </span>
+                                            <span class="card-title">القسم الفرعي </span>
+                                            <p>المحتوى</p>
+                                        </div>
+                                        <div class="card-action center-align">
+                                            <a href="#" class="btn waves-effect effect-light blue">عرض التفاصيل</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 l4">
+                                        <div class="card center-align">
+                                                <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 0; margin: 7px;"><i class="material-icons">edit</i></a>
+                                                <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 45px; margin: 7px;"><i class="material-icons">close</i></a>
+                                            <br>
+                                                <div class="card-content">
+                                                <span class="card-title">القسم الرئيسي </span>
+                                                <span class="card-title">القسم الفرعي </span>
+                                                <p>المحتوى</p>
+                                            </div>
+                                            <div class="card-action center-align">
+                                                <a href="#" class="btn waves-effect effect-light blue">عرض التفاصيل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12 l4">
+                                            <div class="card center-align">
+                                                    <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 0; margin: 7px;"><i class="material-icons">edit</i></a>
+                                                    <a class="btn-floating btn waves-effect waves-light blue" style="position: absolute; left: 45px; margin: 7px;"><i class="material-icons">close</i></a>
+                                                <br>
+                                                    <div class="card-content">
+                                                    <span class="card-title">القسم الرئيسي</span>
+                                                    <span class="card-title">القسم الفرعي</span>
+                                                    <p>المحتوى</p>
+                                                </div>
+                                                <div class="card-action center-align">
+                                                    <a href="#" class="btn waves-effect effect-light blue">عرض التفاصيل</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div id="modal1" class="modal">
+                                            <div class="modal-content">
+                                            <h4>القسم الرئيسي</h4>
+                                            <h5>القسم الفرعي</h5>
+                                            <div class="row">
+                                                <div class="col s8">
+                                                        <video class="responsive-video z-depth-3" controls>
+                                                                <source src="vid/videoplayback.mp4" type="video/mp4">
+                                                                </video>
+                                                </div>
+                                                <div class="col s4">
+                                                        <ul class="collapsible" class="right-align">
+                                                                <li>
+                                                                        <div class="collapsible-header waves-effect waves-teal">
+                                                                                <span>روابط اضافية</span><i class="material-icons">more_horiz</i>
+                                                                            </div>
+                                                                            <div class="collapsible-body">
+                                                                                    <ul>
+                                                                                            <li><a href="#">روابط اضافية 1</a></li>
+                                                                                            <li><a href="#">روابط اضافية 1</a></li>
+                                                                                            <li><a href="#">روابط اضافية 1</a></li>
+                                                                                          </ul>
+                                                                            </div>
+                                                                </li>
+                                                                <li>
+                                                                        <div class="collapsible-header waves-effect waves-teal">
+                                                                                <span>تمارين</span><i class="material-icons">picture_as_pdf</i>
+                                                                            </div>
+                                                                            <div class="collapsible-body">
+                                                                                    <ul>
+                                                                                            <li><a href="#">تمارين 1</a></li>
+                                                                                            <li><a href="#">تمارين 1</a></li>
+                                                                                            <li><a href="#">تمارين 1</a></li>
+                                                                                          </ul>
+                                                                            </div>                                                                  <!-- <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div> -->
+                                                                </li>
+                                                                <li>
+                                                                        <div class="collapsible-header waves-effect waves-teal">
+                                                                                <span>محتوى المادة</span><i class="material-icons">picture_as_pdf</i>
+                                                                            </div>
+                                                                            <div class="collapsible-body">
+                                                                                    <ul>
+                                                                                            <li><a href="#">محتوى المادة 1</a></li>
+                                                                                            <li><a href="#">محتوى المادة 1</a></li>
+                                                                                            <li><a href="#">محتوى المادة 1</a></li>
+                                                                                          </ul>
+                                                                            </div>                                                                        <!-- <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div> -->
+                                                                </li>
+                                                              
+                                                              </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">اغلاق</a>
+                                            </div>
+                                        </div>
+                                        <div id="modal2" class="modal">
+                                                <div class="modal-content">
+                                                        <h4>تعديل القسم</h4>
+
+                                                        <form action="">
+                                                                <div class="row">
+                                                                    <div class="input-field col s2 offset-s6">
+                                                                        <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                                                                    </div>
+                                                                    <div class="input-field col s4">
+                                                                      <input style="text-align: right; direction:rtl;" placeholder="الصف" id="" type="text" class="validate">
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                        <div class="input-field col s2 offset-s6">
+                                                                            <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                                                                        </div>
+                                                                        <div class="input-field col s4">
+                                                                          <input style="text-align: right; direction:rtl;" placeholder="نشاط" id="" type="text" class="validate">
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                            <div class="input-field col s2 offset-s6" >
+                                                                                    <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                                                                                </div>
+                                                                                <div class="input-field col s4">
+                                                                                  <input style="text-align: right; direction:rtl;" placeholder="المادة" id="" type="text" class="validate">
+                                                                                </div>
+                                                                      </div>
+                                                                      <div style="width: 50%;margin-left: auto; margin-top: 25px;" class="file-field input-field">
+                                                                            <div class="btn blue">
+                                                                              <span>الفيديو</span>
+                                                                              <input type="file" multiple>
+                                                                            </div>
+                                                                            <div class="file-path-wrapper">
+                                                                              <input  style="text-align: right; direction:rtl;" class="file-path validate" type="text" placeholder="ارفاق مقطع الفيديو">
+                                                                            </div>
+                                                                          </div>
+                                    
+                                                             <div class="input-field col s2 offset-s6" >
+                                                                 <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                                                             </div>
+                                                             <div class="input-field col s4">
+                                                               <input style="text-align: right; direction:rtl;" placeholder="عنوان المقطع" id="" type="text" class="validate">
+                                                             </div>
+                                    
+                                                              <div class="input-field col s2 offset-s6" >
+                                                                    <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة">
+                                                                </div>
+                                                                <div class="input-field col s4">
+                                                                  <input style="text-align: right; direction:rtl;" placeholder="روابط اضافية" id="" type="text" class="validate">
+                                                                </div> 
+                                    
+                                                           
+                                                                <div style="width: 50%;margin-left: auto; margin-top: -15px; display: inline-block;" class="file-field input-field">
+                                                                        <div class="btn blue">
+                                                                          <span>الملف</span>
+                                                                          <input type="file" multiple>
+                                                                        </div>
+                                                                        <div class="file-path-wrapper">
+                                                                          <input  style="text-align: right; direction:rtl;" class="file-path validate" type="text" placeholder="ارفاق تمرين">
+                                                                        </div>
+                                                                      </div>
+                                                               </form>
+                                                </div>
+                                                <div class="modal-footer">
+
+                                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">حفظ</a>
+                                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">اغلاق</a>
+
+                                                </div>
+                                            </div>
+                                            <div id="modal3" class="modal">
+                                                    <div class="modal-content">
+                                                    <h4>هل أنت متاكد بحذف هذا القسم؟</h4>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">نعم</a>
+                                                    </div>
+                                                </div>
+                   </div>
+                </div> 
+            
+       </div>
+
+   </div>
+          
+
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+         });
+         $(document).ready(function(){
+    $('.sidenav').sidenav();
+                $('.collapsible').collapsible();
+
+  });
+  $('.dropdown-trigger').dropdown();
+  $('.dropdown-trigger1').dropdown();
+
+  $('.modal').modal();
+
+
+  let tabLinks = document.querySelectorAll('.tab-link');
+  let tabs = document.querySelectorAll('.the-tab');
+  
+  tabs.forEach(function(tab) {
+      if(tab.id == "#5") {
+        tab.style.display = "block";
+      } else {
+        tab.style.display = "none";
+      }
+  });
+ 
+
+  tabLinks.forEach(function(tabLink) {
+      tabLink.addEventListener('click', function() {
+        
+        tabs.forEach(function(tab) {
+            tab.style.display = "none"
+        if(tabLink.getAttribute('href') == tab.id) {
+            tab.style.display = "block";
+        }
+        });
+      });
+  });
+
+  let dropdown1 = document.querySelector('#dropdown1');
+  dropdown1.addEventListener('click', function(e) {
+      let preview_selected = document.querySelector('#preview_selected');
+      let hidden_tab = document.querySelector('.hidden_tab');
+      preview_selected.textContent = 'قمت باختيار ' + e.target.textContent;
+      hidden_tab.style.display = "block";
+  });
+
+   let dropdown2 = document.querySelector('#dropdown2');
+  dropdown2.addEventListener('click', function(e) {
+      let preview_selected2 = document.querySelector('#preview_selected2');
+      let hidden_tab2 = document.querySelector('.hidden_tab2');
+      preview_selected2.textContent = 'قمت باختيار ' + e.target.textContent;
+      hidden_tab2.style.display = "block";
+  });
+
+  let adding_btn = document.querySelector('.adding_btn');
+  adding_btn.addEventListener('click', function() {
+      let additional_links_container = document.querySelector('#additional_links_container');
+      
+      
+      custom_input = '<div><div class="input-field col s2 offset-s6" > <input style="top: 10px;" type="submit" class="btn blue waves-effect" value="اضافة"> </div><div class="input-field col s4" ><input style="text-align: right; direction:rtl;" placeholder="روابط اضافية" id="" type="text" class="validate"></div></div>';
+      additional_links_container.insertAdjacentHTML('beforeend', custom_input);
+  });
+
+    let adding_btn2 = document.querySelector('.adding_btn2');
+    adding_btn2.addEventListener('click', function() {
+      let additional_exercises_container = document.querySelector('#additional_exercises_container');
+      
+      
+      custom_input = '<div style="width: 50%;margin-left: auto; margin-top: -15px; display: inline-block;" class="file-field input-field"><div class="btn blue"><span>الملف</span><input type="file" multiple></div><div class="file-path-wrapper"><input  style="text-align: right; direction:rtl;" class="file-path validate" type="text" placeholder="ارفاق تمرين"></div></div>';
+      additional_exercises_container.insertAdjacentHTML('beforeend', custom_input);
+  });
+
+ 
+  
+    </script>
+</body>
+</html>
